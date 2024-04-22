@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="/" class="cs-logo" aria-label="back to home">
+                <img src="image-removebg-preview (1).png" alt="logo" width="80" height="50" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <!-- This also allows for easy substitution of CodeStitch navigations. Just replace the .cs-ul-wrapper in the new navigation with this one -->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li"><a href="" class="cs-li-link">Home</a></li>
+                        <li class="cs-li"><a href="" class="cs-li-link">About</a></li>
+                        <li class="cs-li"><a href="" class="cs-li-link">Services</a></li>
+                        <li class="cs-li"><a href="" class="cs-li-link">Reviews</a></li>
+                        <li class="cs-li"><a href="" class="cs-li-link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="/contact" class="cs-button-solid cs-nav-button cs-remove">Contact Us</a>
+        </div>
+    </header> 
+    <section id="section">
+        <div></div>
+    </section>
+    <section id="section2">
+        <div></div>
+    </section>
+
+<script src="nav.js"></script>
+</body>
+</html>
